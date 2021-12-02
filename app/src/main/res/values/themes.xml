@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KCMAv1" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <!-- Secondary brand color. -->
+        <item name="colorPrimaryVariant">@color/light_blue</item>
+        <item name="colorSecondary">@color/dark_blue</item>
+        <item name="colorSecondaryVariant">@color/dark_pink</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+       <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.KCMAv1.NoActionBar" parent="Theme.MaterialComponents.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryVariant">@color/light_blue</item>
+        <item name="colorSecondary">@color/dark_blue</item>
+        <item name="colorSecondaryVariant">@color/dark_pink</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+<style name="mybuttons">
+    <item name="cornerRadius">15dp</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="backgroundTint">@color/dark_pink</item>
+    <item name="android:padding">14dp</item>
+</style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+    <style name="myfab">
+        <item name="backgroundTint">@color/light_pink</item>
+        <item name="color">#ffffff</item>
+    </style>
+    <style name="welcome_log">
+        <item name="android:textColor">#ffffff</item>
+        <item name="backgroundTint">@color/dark_pink</item>
+        <item name="android:padding">18dp</item>
+    </style>
+    <style name="edit_text">
+        <item name="android:maxLines">1</item>
+        <item name="android:minLines">1</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="welcome_reg">
+        <item name="android:textColor">#ffffff</item>
+        <item name="backgroundTint">#0D0651</item>
+        <item name="android:padding">18dp</item>
+    </style>
+    <style name="Theme.KCMAv1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.KCMAv1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadYourScriptsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#180A95"
+        app:titleTextColor="@color/white"
+        app:theme="@style/ToolbarTheme"
+        android:id="@+id/toolbar"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:focusableInTouchMode="false"
+        >
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/select_pdf"
+            style="@style/welcome_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select pdf to upload" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_name"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please edit the song title:"
+            android:layout_marginVertical="5dp"
+            android:textColor="@color/light_blue"
+            />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mada ya wimbo"
+        android:id="@+id/upload_song_title"
+        android:background="@drawable/upload_editext_backgroud"
+        android:layout_marginTop="7dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Umeimbwa na nani"
+        android:background="@drawable/upload_editext_backgroud"
+        android:layout_marginTop="7dp"
+        android:id="@+id/upload_song_singers"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Umetungwa na nani"
+        android:id="@+id/upload_song_composer"
+        android:background="@drawable/upload_editext_backgroud"
+        android:layout_marginTop="7dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chagua kikundi cha nyimbo hapa"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/type_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload song"
+        style="@style/welcome_reg"
+        android:id="@+id/upload_song_button"
+      />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

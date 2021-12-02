@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SongDetailActivity">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#180A95"
+    app:titleTextColor="@color/white"
+    app:theme="@style/ToolbarTheme"
+    android:id="@+id/d_toolbar"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BY:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/detail_song_composer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp" />
+
+</LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="10dp"
+     >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="CATEGORY:"
+         android:textSize="24sp"
+         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/detail_song_type"
+         android:layout_marginLeft="10dp"
+         android:layout_weight="1"
+         />
+ </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="24sp"
+        android:text="UPLOADED BY:"
+        />
+        <TextView
+            android:id="@+id/detail_uploaded_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="24sp" />
+</LinearLayout>
+    <TextView
+        android:drawableLeft="@drawable/ic_eye"
+        android:id="@+id/detail_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/detail_number_of_downloads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_download"
+        android:textSize="24sp" />
+<Button
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="download"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:id="@+id/download_btn"
+    style="@style/welcome_reg"
+    android:textColor="#ffffff"
+    />
+    </LinearLayout>
+</LinearLayout>

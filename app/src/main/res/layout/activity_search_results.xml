@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchResultsActivity">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/light_pink"-->
+<!--        android:id="@+id/result_toolbar"-->
+<!--        />-->
+
+<!--    <View-->
+<!--        android:id="@+id/anchor_dropdown"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp" />-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#180A95"
+        app:titleTextColor="@color/white"
+        app:theme="@style/ToolbarTheme"
+        android:padding="6dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:id="@+id/back_btn"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_search"
+            android:layout_weight="1"
+            android:hint="Search Music Notes"
+            android:background="@drawable/searchedittext_background"
+            android:imeOptions="actionSearch"
+            />
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_results"
+    android:layout_marginTop="6dp"
+    />
+</LinearLayout>

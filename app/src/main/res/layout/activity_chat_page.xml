@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0C0455"
+            app:titleTextColor="#ffffff"
+            app:theme="@style/ToolbarTheme"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/holder_two"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_gchat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constrainedHeight="true"
+        android:layout_below="@id/toolbar"
+        android:layout_weight="1"
+        />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#9F9E9E"
+    android:layout_marginRight="70dp"
+    android:layout_marginLeft="10dp"
+    />
+<LinearLayout
+    android:id="@+id/compose_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+ >
+    <LinearLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/send_btn_background"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/button_pick_image"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_attach_file_24"
+            />
+    </LinearLayout>
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/message_edit_text_baclground"
+            android:hint="Share a new post"
+            android:inputType="text"
+            android:maxLines="6" />
+<LinearLayout
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:background="@drawable/send_btn_background"
+    android:gravity="center"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="10dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/button_send_message"
+    >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_send_244"
+            />
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_holder"
+    android:visibility="gone"
+    />
+</LinearLayout>

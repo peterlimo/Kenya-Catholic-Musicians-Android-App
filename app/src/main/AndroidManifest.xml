@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kcmav1">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <meta-data
+        android:name="android.app.searchable"
+        android:resource="@xml/searchable" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KCMAv1.NoActionBar">
+        <activity android:name=".learn.ViewPdfActivity"></activity>
+        <activity android:name=".learn.TakeExamActivity" />
+        <activity android:name=".learn.PlayVideoActivity" />
+        <activity android:name=".learn.ExamActivity" />
+        <activity android:name=".TestFilePicker" />
+        <activity android:name=".dashboard.hire.HireActivity" />
+        <activity android:name=".learn.VideoTutor" />
+        <activity android:name=".learn.PdfTutor" />
+        <activity android:name=".learn.LearnerDashboard" />
+        <activity android:name=".learn.LearnerDashWelcome" />
+        <activity android:name=".ResponsesActivity" />
+        <activity android:name=".EmailValidation" />
+        <activity android:name=".SongListActivity" />
+        <activity android:name=".DashActivity" />
+        <activity android:name=".dashboard.forums.ForumFragment" />
+        <activity android:name=".dashboard.myscripts.MyscriptsFragment" />
+        <activity android:name=".dashboard.search.HomeFragment">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".SongDetailActivity" />
+        <activity android:name=".UploadYourScriptsActivity" />
+        <activity android:name=".SearchResultsActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ChatPageActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserProfileFragment" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

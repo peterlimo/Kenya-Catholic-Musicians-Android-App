@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.kcmav1.viewModels.LoginViewModel" />
+    </data>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/limo"
+        android:layout_gravity="center"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="All Kenyan Music Notes In One Place"
+    android:gravity="center"
+    android:textColor="@color/dark_pink"
+    />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:onClick="@{viewModel::OpenLoginPage}"
+       style="@style/welcome_log"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:onClick="@{viewModel::OpenRegisterPage}"
+        style="@style/welcome_reg"
+        />
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KCMA</string>
+    <string name="recent_text">The Bishop of Eldoret Diocese is in Elgeyo Marakwet for an army passout ceremony
+
+jvkdjodsjfosjofdojsjifhsvhfsjvirfgwrghiowhhowuhguhrfeuhwfhurhurwofodhdkkdwjorhowrfijfkjfiwjfdhfidajvkdjdkbvkowowjowiofrhgwjiwjirjwhiw
+</string>
+    <string name="see_more">see more</string>
+    <string name="hint">Search for songs</string>
+    <string name="sample_message">No internetTry:Checking the network cables, modem, and routerReconnecting to Wi-Fi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_description_media">sent_image</string>
+    <string name="GOOGLE_API_KEY">AIzaSyAaBVVbPUdspSB__KjZHHQ4gjtXoBO_Ezs</string>
+    <string name="hire_desc">You will be listed in the list of people who are available for hire and can receive hire requests from various choirs</string>
+</resources>
