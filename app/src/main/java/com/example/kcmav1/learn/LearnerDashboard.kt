@@ -28,13 +28,13 @@ class LearnerDashboard : AppCompatActivity() {
         recyclerView.layoutManager=LinearLayoutManager(applicationContext,RecyclerView.VERTICAL,false)
 
         openVids.setOnClickListener {
-startActivity(Intent(applicationContext,VideoTutor::class.java))
+             startActivity(Intent(applicationContext,VideoTutor::class.java))
         }
         openPdf.setOnClickListener {
-startActivity(Intent(applicationContext,PdfTutor::class.java))
+             startActivity(Intent(applicationContext,PdfTutor::class.java))
         }
         openExam.setOnClickListener {
-            startActivity(Intent(applicationContext,ExamActivity::class.java))
+             startActivity(Intent(applicationContext,ExamActivity::class.java))
         }
     }
 }

@@ -45,7 +45,7 @@ class TakeExamActivity : Activity() {
         q_no=findViewById(R.id.q_no)
         q_title=findViewById(R.id.q_title)
         isComplet=false
-AppPreferences.init(this)
+        AppPreferences.init(this)
         title=intent.getStringExtra("title").toString()
         db= FirebaseFirestore.getInstance()
         db.collection("exams")
@@ -91,10 +91,8 @@ AppPreferences.init(this)
          next.setOnClickListener {
              disPlay()
     }
-
         done.setOnClickListener {
-val dialog=ResultDialog()
-
+        val dialog=ResultDialog()
         }
     }
 

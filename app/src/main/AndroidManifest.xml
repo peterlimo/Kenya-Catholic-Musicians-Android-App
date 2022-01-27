@@ -21,11 +21,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KCMAv1.NoActionBar">
-        <activity android:name=".learn.ViewPdfActivity"></activity>
+        <activity android:name=".learn.ViewPdfActivity"/>
         <activity android:name=".learn.TakeExamActivity" />
         <activity android:name=".learn.PlayVideoActivity" />
         <activity android:name=".learn.ExamActivity" />
-        <activity android:name=".TestFilePicker" />
+<!--        <activity android:name=".TestFilePicker" />-->
         <activity android:name=".dashboard.hire.HireActivity" />
         <activity android:name=".learn.VideoTutor" />
         <activity android:name=".learn.PdfTutor" />
@@ -44,11 +44,11 @@
         </activity>
         <activity android:name=".SongDetailActivity" />
         <activity android:name=".UploadYourScriptsActivity" />
-        <activity android:name=".SearchResultsActivity">
+        <activity android:name=".SearchResultsActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
-
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -58,14 +58,13 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserProfileFragment" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

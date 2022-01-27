@@ -36,14 +36,13 @@ class LearnerDashWelcome : AppCompatActivity() {
                 .document("students")
                 .collection("student")
                 .document(userEmail)
-                .set(learner)
-        .addOnSuccessListener {
-            toast("Joined Succesfully")
-            val i= Intent(applicationContext, LearnerDashboard::class.java)
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(i)
-            finishAffinity()
-            finish()
+                .set(learner).addOnSuccessListener {
+                toast("Joined Succesfully")
+                val i= Intent(applicationContext, LearnerDashboard::class.java)
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(i)
+                finishAffinity()
+                finish()
         }
     }
 

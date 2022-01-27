@@ -37,11 +37,11 @@ class BestPostAdapter(var list:List<Message>,var listener:OnIconClickListener): 
             if (message.url!="null")
             {
                 val image_message:ImageView=itemView.findViewById(R.id.image_message)
-              Picasso.get().load(message.url).into(image_message)
+                Picasso.get().load(message.url).into(image_message)
             }
             if(message.text.isEmpty() && message.url!="null" )
             {
-            message_layout.visibility=View.GONE
+                message_layout.visibility=View.GONE
             }
             if (message.isLike)
             {

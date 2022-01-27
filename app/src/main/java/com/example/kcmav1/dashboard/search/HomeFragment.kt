@@ -60,18 +60,18 @@ class HomeFragment : AppCompatActivity(),TypeListAdapter.OnItemClickListener{
     {
         db.collection("files")
                 .addSnapshotListener { value, e ->
-if (e!=null){
-    return@addSnapshotListener
-}
+    if (e!=null){
+        return@addSnapshotListener
+    }
                     type.clear()
- for (doc in value!!)
- {
-     if (doc.exists()) {
-         val title=doc.id
-         type.add(Type(title))
-         recyclerView.adapter=adapter
+     for (doc in value!!)
+     {
+         if (doc.exists()) {
+             val title=doc.id
+             type.add(Type(title))
+             recyclerView.adapter=adapter
+         }
      }
- }
  }
  }
 

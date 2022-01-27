@@ -35,8 +35,6 @@ class ViewSongsOfTypeAdapter (private val type:List<DList>, private val listener
             val position = adapterPosition
 //           if (position!=RecyclerView.NO_POSITION){
             listener.onItemClickme(position)
-
-
         }
     }
 

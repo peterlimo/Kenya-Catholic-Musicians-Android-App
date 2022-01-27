@@ -1,6 +1,5 @@
 package com.example.kcmav1.dashboard.hire
 
-import android.R.id.message
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -50,7 +49,7 @@ val list=ArrayList<Hire>()
         val email = Intent(Intent.ACTION_SEND)
         email.putExtra(Intent.EXTRA_EMAIL, item.email)
         email.putExtra(Intent.EXTRA_SUBJECT,"HIRE FOR CHOIR TRAINING")
-        email.putExtra(Intent.EXTRA_TEXT,"I am ${AppPreferences.username} from ${AppPreferences.church} And i am requesting you for a hire as a music trainer our church.Please contact me on ${AppPreferences.email}/${AppPreferences.number} for more information")
+        email.putExtra(Intent.EXTRA_TEXT,"I am ${AppPreferences.username} from ${AppPreferences.church} And i am requesting you for a hire as a music trainer your church.For more information please contact me on ${AppPreferences.email}/${AppPreferences.number}.Thank you")
         email.type = "message/rfc822"
         startActivity(Intent.createChooser(email, "Choose an Email client :"))
     }

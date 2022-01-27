@@ -113,8 +113,7 @@ dataAdapter.notifyDataSetChanged()
             val i=Intent(applicationContext, LoginActivity::class.java)
             startActivity(i)
             finish()
-        }
-                .addOnFailureListener(this) {
+        }.addOnFailureListener(this) {
                     val snackBar = Snackbar.make(binding.root, "Registration Failed", Snackbar.LENGTH_LONG)
                     snackBar.show()
                 }

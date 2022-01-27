@@ -114,7 +114,7 @@ class UploadYourScriptsActivity : AppCompatActivity(),AdapterView.OnItemSelected
                 }
             }
             else if (uri.toString().startsWith("file://")){
-displayName=file.name
+                displayName=file.name
             }
                 song_name.text= displayName
                 song_title.setText(displayName)
@@ -124,7 +124,8 @@ displayName=file.name
         super.onActivityResult(requestCode, resultCode, data)
     }
 
-   fun upload(){
+   fun upload()
+   {
         var mRefrence= mstoragerf.child(uri.lastPathSegment.toString())
        progrss.setTitle("Uploading document!!")
        progrss.show()
@@ -149,7 +150,8 @@ displayName=file.name
 
     }
 
-    private fun saveSongData(songUrl: String) {
+    private fun saveSongData(songUrl: String)
+    {
 
         val db = FirebaseFirestore.getInstance()
         val song = UploadSongData(song_title.text.toString().toLowerCase(), user,songUrl, song_composer.text.toString(), song_choir.text.toString(),selectedDio,0,0,"no")

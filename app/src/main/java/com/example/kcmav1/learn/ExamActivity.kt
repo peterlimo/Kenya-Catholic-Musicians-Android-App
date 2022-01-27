@@ -28,6 +28,7 @@ class ExamActivity : AppCompatActivity() ,PdfListAdapter.OnItemClickListener{
         adapter= PdfListAdapter(pdf,this)
         fetchExamGrades()
     }
+
     private fun fetchExamGrades(){
         db.collection("exams")
                 .get()
@@ -43,6 +44,7 @@ class ExamActivity : AppCompatActivity() ,PdfListAdapter.OnItemClickListener{
                     }
                 }
     }
+
     override fun onItemClick(position: Int) {
         val item= pdf[position]
         val id=item.name
